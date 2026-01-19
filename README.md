@@ -1,23 +1,36 @@
 # Shadcn Admin Dashboard
 
-Admin Dashboard UI crafted with Shadcn and Vite. Built with responsiveness and accessibility in mind.
+A modern, comprehensive admin dashboard UI built with **ShadcnUI**, **Vite**, and **TanStack Router**. Designed with responsiveness, accessibility, and developer experience in mind.
 
-![alt text](public/images/shadcn-admin.png)
+![Shadcn Admin Dashboard](public/images/shadcn-admin.png)
 
-I've been creating dashboard UIs at work and for my personal projects. I always wanted to make a reusable collection of dashboard UI for future projects; and here it is now. While I've created a few custom components, some of the code is directly adapted from ShadcnUI examples.
+This project provides a complete admin dashboard solution with a rich set of components, pages, and features. Perfect for building modern web applications that require admin interfaces, data management, and user authentication flows.
 
-> This is not a starter project (template) though. I'll probably make one in the future.
+## ✨ Features
 
-## Features
+### 🎨 **UI & Design**
+- **Dark/Light mode** with system preference detection
+- **RTL (Right-to-Left) support** for international applications  
+- **Responsive design** - works perfectly on mobile, tablet, and desktop
+- **Accessible components** following WCAG guidelines
+- **Modern sidebar** with collapsible navigation and team switching
 
-- Light/dark mode
-- Responsive
-- Accessible
-- With built-in Sidebar component
-- Global search command
-- 10+ pages
-- Extra custom components
-- RTL support
+### 🚀 **Core Functionality**
+- **Global search command** (⌘K) for quick navigation
+- **15+ pre-built pages** including dashboard, tables, forms, and error states
+- **Advanced data tables** with sorting, filtering, pagination, and bulk actions
+- **Authentication flow** with multiple sign-in/up variations
+- **Task management** with drag-and-drop capabilities
+- **Chat interface** with real-time messaging UI
+- **User management** with detailed profiles and permissions
+
+### 🔧 **Developer Experience**
+- **TypeScript** for type safety
+- **TanStack Router** for file-based routing with type-safe navigation
+- **TanStack Query** for data fetching and caching
+- **Form validation** with React Hook Form and Zod
+- **Code splitting** and lazy loading for optimal performance
+- **ESLint + Prettier** for code quality and formatting
 
 <details>
 <summary>Customized Components (click to expand)</summary>
@@ -56,62 +69,213 @@ If you want to update components using the Shadcn CLI (e.g., `npx shadcn@latest 
 
 </details>
 
-## Tech Stack
+## 🏗️ Tech Stack
 
-**UI:** [ShadcnUI](https://ui.shadcn.com) (TailwindCSS + RadixUI)
+### **Frontend Framework**
+- **[React 19](https://react.dev/)** - The library for web and native user interfaces
+- **[TypeScript](https://www.typescriptlang.org/)** - JavaScript with syntax for types
 
-**Build Tool:** [Vite](https://vitejs.dev/)
+### **Build & Development**
+- **[Vite](https://vitejs.dev/)** - Next generation frontend tooling
+- **[SWC](https://swc.rs/)** - Rust-based platform for compilation
 
-**Routing:** [TanStack Router](https://tanstack.com/router/latest)
+### **UI & Styling**
+- **[ShadcnUI](https://ui.shadcn.com)** - Re-usable components built with Radix UI and Tailwind CSS
+- **[TailwindCSS v4](https://tailwindcss.com/)** - A utility-first CSS framework
+- **[Radix UI](https://www.radix-ui.com/)** - Unstyled, accessible components
 
-**Type Checking:** [TypeScript](https://www.typescriptlang.org/)
+### **Routing & Data Fetching**
+- **[TanStack Router](https://tanstack.com/router/latest)** - Type-safe file-based routing
+- **[TanStack Query](https://tanstack.com/query/latest)** - Data fetching and caching library
+- **[Axios](https://axios-http.com/)** - Promise based HTTP client
 
-**Linting/Formatting:** [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/)
+### **Form & Validation**
+- **[React Hook Form](https://react-hook-form.com/)** - Performant, flexible forms
+- **[Zod](https://zod.dev/)** - TypeScript-first schema validation
 
-**Icons:** [Lucide Icons](https://lucide.dev/icons/), [Tabler Icons](https://tabler.io/icons) (Brand icons only)
+### **State Management**
+- **[Zustand](https://zustand-demo.pmnd.rs/)** - Small, fast, and scalable state management
 
-**Auth (partial):** [Clerk](https://go.clerk.com/GttUAaK)
+### **Icons & Assets**
+- **[Lucide Icons](https://lucide.dev/icons/)** - Beautiful & consistent icons
+- **[Tabler Icons](https://tabler.io/icons)** - Brand icons only
 
-## Run Locally
+### **Development Tools**
+- **[ESLint](https://eslint.org/)** - Code linting
+- **[Prettier](https://prettier.io/)** - Code formatting
+- **[Knip](https://knip.dev/)** - Find unused files, dependencies and exports
 
-Clone the project
+## 📁 Project Structure
 
-```bash
-  git clone https://github.com/satnaing/shadcn-admin.git
+```
+src/
+├── assets/           # Static assets (icons, images)
+├── components/       # Reusable UI components
+│   ├── ui/          # ShadcnUI base components
+│   ├── layout/      # Layout-specific components
+│   └── data-table/  # Advanced table components
+├── features/        # Feature-based modules
+│   ├── auth/        # Authentication pages
+│   ├── dashboard/   # Dashboard components
+│   ├── users/       # User management
+│   ├── tasks/       # Task management
+│   └── chats/       # Chat interface
+├── hooks/           # Custom React hooks
+├── lib/             # Utility functions
+├── routes/          # TanStack Router pages
+├── stores/          # Zustand stores
+└── styles/          # Global styles
 ```
 
-Go to the project directory
+## 📱 Available Pages
 
+### **📊 Dashboard**
+- Overview with analytics and charts
+- Recent sales and activity tracking
+- Customizable widgets and metrics
+
+### **👥 User Management**
+- User listing with advanced filtering
+- User profiles and detailed views
+- Role-based access control interface
+
+### **✅ Task Management**
+- Kanban-style task boards
+- Task creation and editing
+- Priority and status management
+
+### **💬 Chat Interface**
+- Real-time chat UI
+- User presence indicators
+- Message threading and reactions
+
+### **📱 Apps**
+- Application management dashboard
+- App listing and configuration
+- Integration management
+
+### **🔐 Authentication**
+- Multiple sign-in layouts
+- Sign-up with validation
+- Forgot password flow
+- OTP verification
+
+### **⚠️ Error Pages**
+- 401 Unauthorized
+- 403 Forbidden  
+- 404 Not Found
+- 500 Internal Server Error
+- Maintenance page
+
+### **⚙️ Settings**
+- Profile management
+- Account settings
+- Appearance preferences
+- Notification controls
+
+## 🚀 Getting Started
+
+### **Prerequisites**
+
+Make sure you have the following installed:
+- **Node.js** (v18 or higher)
+- **pnpm** (recommended) or npm/yarn
+
+### **Installation**
+
+1. **Clone the repository**
 ```bash
-  cd shadcn-admin
+git clone https://github.com/satnaing/shadcn-admin.git
+cd shadcn-admin
 ```
 
-Install dependencies
-
+2. **Install dependencies**
 ```bash
-  pnpm install
+pnpm install
 ```
 
-Start the server
-
+3. **Start development server**
 ```bash
-  pnpm run dev
+pnpm dev
 ```
 
-## Sponsoring this project ❤️
+4. **Open your browser**
+Navigate to `http://localhost:5173` to see the application.
 
-If you find this project helpful or use this in your own work, consider [sponsoring me](https://github.com/sponsors/satnaing) to support development and maintenance. You can [buy me a coffee](https://buymeacoffee.com/satnaing) as well. Don’t worry, every penny helps. Thank you! 🙏
+### **Available Scripts**
 
-For questions or sponsorship inquiries, feel free to reach out at [satnaingdev@gmail.com](mailto:satnaingdev@gmail.com).
+```bash
+# Development
+pnpm dev              # Start development server
 
-### Current Sponsor
+# Building
+pnpm build            # Build for production
+pnpm preview          # Preview production build
 
-- [Clerk](https://go.clerk.com/GttUAaK) - authentication and user management for the modern web
+# Code Quality
+pnpm lint             # Run ESLint
+pnpm format           # Format with Prettier
+pnpm format:check     # Check formatting
 
-## Author
+# Analysis
+pnpm knip             # Find unused files and dependencies
+```
 
-Crafted with 🤍 by [@satnaing](https://github.com/satnaing)
+## 🎯 Key Features Highlights
 
-## License
+### **🔍 Global Search**
+Press `Cmd/Ctrl + K` to open the global command menu for quick navigation throughout the application.
 
-Licensed under the [MIT License](https://choosealicense.com/licenses/mit/)
+### **📊 Advanced Data Tables**
+- Server-side sorting and filtering
+- Column visibility controls
+- Bulk selection and actions
+- Pagination with page size options
+- URL state synchronization
+
+### **🌙 Theme System**
+- Light/Dark mode toggle
+- System preference detection
+- Persistent theme storage
+- Smooth theme transitions
+
+### **🌐 RTL Support**
+Full right-to-left language support with proper component layouts and navigation flow.
+
+### **📱 Responsive Design**
+Optimized layouts for all screen sizes with mobile-first approach and touch-friendly interactions.
+
+## 💡 Customization
+
+This dashboard is built to be highly customizable. You can:
+
+- **Add new pages** by creating routes in `src/routes/`
+- **Create custom components** in `src/components/`
+- **Modify the sidebar** by editing `src/components/layout/data/sidebar-data.ts`
+- **Customize themes** in `src/styles/theme.css`
+- **Add new features** following the feature-based architecture in `src/features/`
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## 💖 Sponsorship
+
+If you find this project helpful, consider supporting its development:
+
+- ⭐ **Star this repository**
+- 🐛 **Report bugs** and suggest features
+- 📢 **Share** with the community
+- 💝 **[Sponsor the project](https://github.com/sponsors/satnaing)**
+
+For questions or sponsorship inquiries: [satnaingdev@gmail.com](mailto:satnaingdev@gmail.com)
+
+## 👨‍💻 Author
+
+**Sat Naing**
+- GitHub: [@satnaing](https://github.com/satnaing)
+- Email: [satnaingdev@gmail.com](mailto:satnaingdev@gmail.com)
+
+## 📄 License
+
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/). Feel free to use it for personal and commercial projects.
